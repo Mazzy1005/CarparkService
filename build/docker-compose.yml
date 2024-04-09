@@ -1,0 +1,21 @@
+services:
+  jakarta_app:
+    build: .
+
+    ports:
+      - 8080:8080
+    
+    depends_on:
+      - db
+
+  db:
+    build: ./db/
+    environment:
+      POSTGRES_DB: "carpark"
+      POSTGRES_USER: "student"
+      POSTGRES_PASSWORD: "12345"
+      PGDATA: "/var/lib/postgresql/data/pgdata"
+    volumes:
+      - .:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
