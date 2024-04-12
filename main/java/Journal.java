@@ -22,7 +22,7 @@ public class Journal extends HttpServlet {
 		ArrayList<JournalData> data = JournalDB.selectAll();
 		request.setAttribute("data", data);
 		response.setContentType("text/html; charset=UTF-8");
-		getServletContext().getRequestDispatcher("/WEB-INF/journal.jsp").forward(request, response);
+		getServletContext().getRequestDispatcher("/WEB-INF/journal_en.jsp").forward(request, response);
 		}
 		else
 		{

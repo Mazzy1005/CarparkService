@@ -23,7 +23,7 @@ public class AutoCreate extends HttpServlet {
 			ArrayList<DriversData> data = DriversDB.selectAll();
 			request.setAttribute("drivers", data);
 			response.setContentType("text/html; charset=UTF-8");
-			getServletContext().getRequestDispatcher("/WEB-INF/auto_create.jsp").forward(request, response);
+			getServletContext().getRequestDispatcher("/WEB-INF/auto_create_en.jsp").forward(request, response);
 		} else {
 			response.sendRedirect("/MyFirstJavaEEProject/Authentication");
 		}

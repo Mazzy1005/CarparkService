@@ -26,7 +26,7 @@ public class RecordsOnRoutes extends HttpServlet {
 			ArrayList<RecordTimeData> data = ReportsDB.recordTime();
 			request.setAttribute("data", data);
 			response.setContentType("text/html; charset=UTF-8");
-			getServletContext().getRequestDispatcher("/WEB-INF/record_time_on_routes.jsp").forward(request, response);
+			getServletContext().getRequestDispatcher("/WEB-INF/record_time_on_routes_en.jsp").forward(request, response);
 		}
 		else
 		{

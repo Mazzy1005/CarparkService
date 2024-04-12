@@ -20,7 +20,7 @@ public class DriverEdit extends HttpServlet {
 			DriversData driver = DriversDB.select(id);
 			request.setAttribute("driver", driver);
 			response.setContentType("text/html; charset=UTF-8");
-			getServletContext().getRequestDispatcher("/WEB-INF/driver_edit.jsp").forward(request, response);
+			getServletContext().getRequestDispatcher("/WEB-INF/driver_edit_en.jsp").forward(request, response);
 		} else {
 			response.sendRedirect("/MyFirstJavaEEProject/Authentication");
 		}

@@ -26,7 +26,7 @@ public class AutoOnRoutes extends HttpServlet {
 			ArrayList<RouteAutoData> data = ReportsDB.numOfAutoOnRoute();
 			request.setAttribute("data", data);
 			response.setContentType("text/html; charset=UTF-8");
-			getServletContext().getRequestDispatcher("/WEB-INF/auto_on_routes.jsp").forward(request, response);
+			getServletContext().getRequestDispatcher("/WEB-INF/auto_on_routes_en.jsp").forward(request, response);
 		}
 		else
 		{

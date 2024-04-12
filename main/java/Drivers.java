@@ -20,7 +20,7 @@ public class Drivers extends HttpServlet {
 			ArrayList<DriversData> data = DriversDB.selectAll();
 			request.setAttribute("data", data);
 			response.setContentType("text/html; charset=UTF-8");
-			getServletContext().getRequestDispatcher("/WEB-INF/drivers.jsp").forward(request, response);
+			getServletContext().getRequestDispatcher("/WEB-INF/drivers_en.jsp").forward(request, response);
 		} else {
 			response.sendRedirect("/MyFirstJavaEEProject/Authentication");
 		}

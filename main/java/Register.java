@@ -16,7 +16,7 @@ public class Register extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html; charset=UTF-8");
-		getServletContext().getRequestDispatcher("/WEB-INF/register.jsp").forward(request, response);
+		getServletContext().getRequestDispatcher("/WEB-INF/register_en.jsp").forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -29,7 +29,7 @@ public class Register extends HttpServlet {
 			response.sendRedirect("/MyFirstJavaEEProject/Authentication");
 		} catch (Exception e) {
 			request.setAttribute("error", true);
-			getServletContext().getRequestDispatcher("/WEB-INF/register.jsp").forward(request, response);
+			getServletContext().getRequestDispatcher("/WEB-INF/register_en.jsp").forward(request, response);
 		}
 	}
 

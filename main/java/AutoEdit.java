@@ -27,7 +27,7 @@ public class AutoEdit extends HttpServlet {
 		request.setAttribute("auto", auto);
 		request.setAttribute("drivers", drivers);
 		response.setContentType("text/html; charset=UTF-8");
-		getServletContext().getRequestDispatcher("/WEB-INF/auto_edit.jsp").forward(request, response);
+		getServletContext().getRequestDispatcher("/WEB-INF/auto_edit_en.jsp").forward(request, response);
 		} else {
 			response.sendRedirect("/MyFirstJavaEEProject/Authentication");
 		}

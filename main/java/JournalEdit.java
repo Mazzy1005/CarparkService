@@ -26,7 +26,7 @@ public class JournalEdit extends HttpServlet {
 			ArrayList<RouteData> routes = RouteDB.selectAll();
 			request.setAttribute("routes", routes);
 			response.setContentType("text/html; charset=UTF-8");
-			getServletContext().getRequestDispatcher("/WEB-INF/journal_edit.jsp").forward(request, response);
+			getServletContext().getRequestDispatcher("/WEB-INF/journal_edit_en.jsp").forward(request, response);
 		} else {
 			response.sendRedirect("/MyFirstJavaEEProject/Authentication");
 		}
@@ -63,7 +63,7 @@ public class JournalEdit extends HttpServlet {
 			ArrayList<RouteData> routes = RouteDB.selectAll();
 			request.setAttribute("routes", routes);
 			response.setContentType("text/html; charset=UTF-8");
-			getServletContext().getRequestDispatcher("/WEB-INF/journal_edit.jsp").forward(request, response);
+			getServletContext().getRequestDispatcher("/WEB-INF/journal_edit_en.jsp").forward(request, response);
 		}
 	}
 

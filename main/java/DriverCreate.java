@@ -17,7 +17,7 @@ public class DriverCreate extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		if (request.getSession().getAttribute("register") != null) {
 		response.setContentType("text/html; charset=UTF-8");
-		getServletContext().getRequestDispatcher("/WEB-INF/driver_create.jsp").forward(request, response);
+		getServletContext().getRequestDispatcher("/WEB-INF/driver_create_en.jsp").forward(request, response);
 		} else {
 			response.sendRedirect("/MyFirstJavaEEProject/Authentication");
 		}

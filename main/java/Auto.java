@@ -20,7 +20,7 @@ public class Auto extends HttpServlet {
 			ArrayList<AutoData> data = AutoDB.selectAll();
 			request.setAttribute("data", data);
 			response.setContentType("text/html; charset=UTF-8");
-			getServletContext().getRequestDispatcher("/WEB-INF/auto.jsp").forward(request, response);
+			getServletContext().getRequestDispatcher("/WEB-INF/auto_en.jsp").forward(request, response);
 		} else {
 			response.sendRedirect("/MyFirstJavaEEProject/Authentication");
 		}

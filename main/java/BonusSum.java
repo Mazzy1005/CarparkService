@@ -20,7 +20,7 @@ public class BonusSum extends HttpServlet {
 		if(request.getSession().getAttribute("register")!=null)
 		{
 			response.setContentType("text/html; charset=UTF-8");
-			getServletContext().getRequestDispatcher("/WEB-INF/bonus_sum.jsp").forward(request, response);
+			getServletContext().getRequestDispatcher("/WEB-INF/bonus_sum_en.jsp").forward(request, response);
 		}
 		else
 		{

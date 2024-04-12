@@ -15,7 +15,7 @@ public class RouteCreate extends HttpServlet {
 			throws ServletException, IOException {
 		if (request.getSession().getAttribute("register") != null) {
 			response.setContentType("text/html; charset=UTF-8");
-			getServletContext().getRequestDispatcher("/WEB-INF/route_create.jsp").forward(request, response);
+			getServletContext().getRequestDispatcher("/WEB-INF/route_create_en.jsp").forward(request, response);
 		} else {
 			response.sendRedirect("/MyFirstJavaEEProject/Authentication");
 		}

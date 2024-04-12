@@ -28,7 +28,7 @@ public class DriversBonus extends HttpServlet {
 			ArrayList<DriverBonusData> data = ReportsDB.driversBonus(sum);
 			request.setAttribute("data", data);
 			response.setContentType("text/html; charset=UTF-8");
-			getServletContext().getRequestDispatcher("/WEB-INF/drivers_bonus.jsp").forward(request, response);
+			getServletContext().getRequestDispatcher("/WEB-INF/drivers_bonus_en.jsp").forward(request, response);
 		}
 		else
 		{

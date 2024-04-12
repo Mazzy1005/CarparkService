@@ -19,7 +19,7 @@ public class RouteEdit extends HttpServlet {
 			RouteData route = RouteDB.select(id);
 			request.setAttribute("route", route);
 			response.setContentType("text/html; charset=UTF-8");
-			getServletContext().getRequestDispatcher("/WEB-INF/route_edit.jsp").forward(request, response);
+			getServletContext().getRequestDispatcher("/WEB-INF/route_edit_en.jsp").forward(request, response);
 		} else {
 			response.sendRedirect("/MyFirstJavaEEProject/Authentication");
 		}

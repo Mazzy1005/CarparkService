@@ -21,7 +21,7 @@ public class Routes extends HttpServlet {
 			ArrayList<RouteData> data = RouteDB.selectAll();
 			request.setAttribute("data", data);
 			response.setContentType("text/html; charset=UTF-8");
-			getServletContext().getRequestDispatcher("/WEB-INF/routes.jsp").forward(request, response);
+			getServletContext().getRequestDispatcher("/WEB-INF/routes_en.jsp").forward(request, response);
 		} else {
 			response.sendRedirect("/MyFirstJavaEEProject/Authentication");
 		}

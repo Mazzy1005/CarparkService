@@ -9,14 +9,14 @@ import java.util.Properties;
 
 public class ConnectionToDB {
 	
-	private static Connection conn; // Соединение
-	private static boolean isInit=false; // Переменная-флаг, false - если соединение ещё не созданно
+	private static Connection conn;
+	private static boolean isInit=false; 
 	private static void init() throws ClassNotFoundException, SQLException
 	{
 		Class.forName("org.postgresql.Driver");
 		Properties props = new Properties();
 		String url=null;
-		try(FileInputStream fin=new FileInputStream("C:\\Users\\yarma\\Study\\Базы данных\\1-ый Семестр\\Курсовая\\config.txt"))
+		try(FileInputStream fin=new FileInputStream("/usr/local/tomcat/webapps/config.txt"))
         {    
 			props.load(fin);
 			url=props.getProperty("url");

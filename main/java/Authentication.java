@@ -17,7 +17,7 @@ public class Authentication extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html; charset=UTF-8");
-		getServletContext().getRequestDispatcher("/WEB-INF/login.jsp").forward(request, response);
+		getServletContext().getRequestDispatcher("/WEB-INF/login_en.jsp").forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -34,7 +34,7 @@ public class Authentication extends HttpServlet {
 		else
 		{
 			request.setAttribute("error", true);
-			getServletContext().getRequestDispatcher("/WEB-INF/login.jsp").forward(request, response);
+			getServletContext().getRequestDispatcher("/WEB-INF/login_en.jsp").forward(request, response);
 		}
 	}
 
